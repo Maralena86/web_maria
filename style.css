@@ -1,0 +1,731 @@
+
+@font-face {
+    font-family: 'dubielplainregular';
+    src: url('polices/Dubiel-webfont.eot');
+    src: url('polices/Dubiel-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Dubiel-webfont.woff') format('woff'),
+         url('polices/Dubiel-webfont.ttf') format('truetype'),
+         url('polices/Dubiel-webfont.svg#dubielplainregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'capsuularegular';
+    src: url('polices/Capsuula-webfont.eot');
+    src: url('polices/Capsuula-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Capsuula-webfont.woff') format('woff'),
+         url('polices/Capsuula-webfont.ttf') format('truetype'),
+         url('polices/Capsuula-webfont.svg#capsuularegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'edoregular';
+    src: url('polices/edo-webfont.eot');
+    src: url('polices/edo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/edo-webfont.woff') format('woff'),
+         url('polices/edo-webfont.ttf') format('truetype'),
+         url('polices/edo-webfont.svg#edoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sinkin_sans100_thin';
+    src: url('polices/SinkinSans-100Thin-webfont.eot');
+    src: url('polices/SinkinSans-100Thin-webfont.eot?#iefix') format('embedded-opentype'),
+                url('polices/SinkinSans-100Thin-webfont.woff') format('woff'),
+         url('polices/SinkinSans-100Thin-webfont.ttf') format('truetype'),
+         url('polices/SinkinSans-100Thin-webfont.svg#sinkin_sans100_thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'sinkin_sans400_regular';
+    src: url('polices/SinkinSans-400Regular-webfont.eot');
+    src: url('polices/SinkinSans-400Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/SinkinSans-400Regular-webfont.woff') format('woff'),
+         url('polices/SinkinSans-400Regular-webfont.ttf') format('truetype'),
+         url('polices/SinkinSans-400Regular-webfont.svg#sinkin_sans400_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oranienbaumregular';
+    src: url('polices/Oranienbaum-Regular-webfont.eot');
+    src: url('polices/Oranienbaum-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/Oranienbaum-Regular-webfont.woff') format('woff'),
+         url('polices/Oranienbaum-Regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('polices/polices/OpenSans-CondLight-webfont.eot');
+    src: url('polices/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),        
+         url('polices/OpenSans-CondLight-webfont.woff') format('woff'),
+         url('polices/OpenSans-CondLight-webfont.ttf') format('truetype'),
+         url('polices/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	text-align: center;
+}
+
+/*---------------------------------------Header---------------------------------------*/
+
+header
+{
+	width: 100%;
+	min-width: 500px;
+	height: auto;	
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(234,234,227,0.8)	
+}
+
+/*navigation/Menu*/
+nav{
+	min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+#logo{
+	height: 75px;
+	margin-left: 40px;
+}
+ul
+{
+	font-size: 1.4em;
+	font-family: 'open_sanscondensed_light';
+	list-style-type: none;
+}
+
+.nav-item:hover
+{
+	border-bottom: 3px solid rgba(247, 151, 93, 0.7);
+	transform: scale(1.1);
+	transition: all 0.8s ease;
+}
+
+.nav-link{
+	transition: 0.7s ease;
+	text-decoration: none;
+	color: #415d73;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+	color: black;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+/***************************************FIN HEADER************************************************/
+
+/*corps de la page*/
+body
+{
+	z-index: 100;
+	background-color: rgba(234,234,227,0.8);
+}
+
+section{
+	min-height:100vh;
+		
+	width: 100%;
+	
+}
+
+
+
+p{
+	font-family: 'open_sanscondensed_light';
+	font-size: 25px;	
+	text-align: center;	
+}
+
+h2 {
+	font-family:'sinkin_sans100_thin';
+	color: #e68f59;
+	font-size: 2.3em;
+	text-shadow: 2px 2px 2px black;	
+}
+
+h3{
+	color: #1c515c;
+	font-family: 'dubielplainregular';
+	text-transform: uppercase;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px;
+}
+
+h4
+{
+	font-family:'sinkin_sans100_thin';
+	color: #cc5810;
+	margin: 10px 0px;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flexCol{
+	display: flex;
+	flex-direction: column;
+	align-items:  center;
+}
+
+.flexBtwn
+{
+	display: flex;	
+	justify-content: space-between;
+	align-items: center;
+}
+.fontWhite{
+	color: white;
+}
+
+
+/*------ Presentation ------*/
+
+#presentation{
+	background-image: url('images/texture.jpg');				
+}
+
+.name{
+	margin-bottom: 40px;
+	margin-left: 10px;
+	text-align: start;
+	font-size: 55px;
+	-webkit-box-reflect: below -30px linear-gradient(transparent, rgba(53, 20, 14, 0.1));	 
+	color:rgb(53, 46, 63);
+	transform: scale(0.8);
+	animation: scaled 12s forwards cubic-bezier(0.7, 1, 0.89, 1)	
+}
+@keyframes scaled {
+	100% {
+	  transform: scale(1);
+	}
+}
+
+#titleWeb{	
+	font-size: 80px;
+	text-align: start;
+	letter-spacing: -5px;
+	font-family: sans-serif;
+	margin: 10px 0px;
+	background-size: 180% auto;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 6s linear infinite;
+	background-image: linear-gradient(
+    -225deg,
+    #2e214e 0%,
+    #4a296d 19%,
+    #814c5d 50%,
+	#b15f79 67%,
+    #587417 80%,
+	#155a66 90%,
+	#09323a 100%
+  );     
+}
+@keyframes textclip {
+	to {
+	  background-position: 200% center;
+	}
+}
+
+#palaiseau{
+	font-size:23px;
+	text-align: start;
+	font-weight: bold;
+	font-family: 'dubielplainregular';
+	color: #4e4221; 
+}
+
+#face2{	
+	width: 20%;
+	opacity: 0.7;	
+}
+.lineLeft {
+	animation: 5s anim-lineLeft ease-in ;
+}
+	@keyframes anim-lineLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(50%);
+	}		
+	100% {
+		opacity: 0.6;
+		transform: translateX(0%);
+	}
+}
+	
+/*----------------------About me------------------------*/
+/* lineRight class and keyframes */
+  .lineRight {
+	animation: 2s anim-lineRight ease-in ;
+  }
+  @keyframes anim-lineRight {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-50%);
+	}	
+	100% {
+	  opacity: 0.6;
+	  transform: translateX(0%);
+	}
+  }
+
+#aboutMe{
+	display: flex;	
+	align-items:flex-end;
+	justify-content: space-between;	
+	background-image: linear-gradient(rgb(4, 25, 31), rgb(9, 43, 51));	
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;		
+}
+
+.descriptionAbout{
+	width: 70%;
+	margin: 100px 0px;
+	margin-right: 40px;
+
+}
+
+/*---------------------Portafolio--------------------------*/
+#portafolio{
+	padding-top: 70px;
+}
+
+#portafolioContainer{	
+	width: 95%;
+	text-align: center;
+	border-radius: 20px;
+}
+
+#portafolioContainer > h3{
+	color: #09323a;
+}
+
+#innerPortafolio{
+	flex-wrap: wrap;
+	padding: 10px 80px ;
+	margin: 80px 0px;
+	border-radius: 10px;
+	background-color: rgb(175, 152, 115, 0.6);
+	background-position: center;
+	background-size: cover;
+}
+
+.itemPortafolio{
+	position: relative;
+	width: 370px;
+	margin:40px;	
+}
+
+.itemPortafolio>img{
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+	box-shadow: 4px 4px 4px black;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(rgb(16, 32, 36), rgb(17, 60, 70));
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease-out;
+	border-radius: 30px;	
+}
+
+.itemPortafolio:hover .overlay{
+	opacity: 1;
+}
+
+.descriptionPortafolio{
+	justify-content: center;	
+	height: 100%;	
+}
+
+.descriptionPortafolio>a{
+	border:2px solid orange;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.descriptionPortafolio>p{
+	color: white;
+	font-size: 25px;
+	padding: 0px 10px;
+}
+
+.descriptionPortafolio>a:hover{
+	background-color: orange;
+	color: black;
+}
+
+#logosDev{
+	background-image: linear-gradient(rgba(219, 204, 184, 0.7), rgb(163, 149, 118, 0.7) );
+	height: 170px;
+	margin: 10px 0px;
+}
+
+
+#logosDev > img{
+	height: 45px;
+	opacity: 0.7;
+}
+
+#logosDev > img:hover{
+	height: 60px;
+	width: 60px;
+}
+/*-----------------------Competences--------------------*/
+
+#competences{
+	background-image: url('images/computer.jpg');		
+	padding: 100px 40px 0px 40px ;
+	background-size: cover;	
+	
+}
+#competences2{
+	padding-bottom: 30px;
+}
+
+.innerCompetence{
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 550px;
+	width: 40%;
+	margin: 70px 0px;
+	border-radius: 20px;
+	box-shadow: 3px 2px 2px rgb(177, 172, 172);
+	text-align: center;
+	padding: 10px;
+}
+.logoWeb{
+	margin: 30px 70px;
+	opacity: 0.6;
+}
+.logoWeb>img{
+	height: 30px;
+}
+#competences2{
+	background-image: url("images/cellos.JPG");
+	background-size: cover;
+	background-position-y: 75em;
+	background-position-x: 4em;
+}
+
+/*-------------------Artistique-------*/
+
+#artistique p{
+	width: 80%;
+}
+#projets{
+	margin-top: 40px;
+}
+.explication
+{	
+	font-style: italic;
+	font-size: 1.5em;	
+}
+.image_proj
+{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url("images/cellos.JPG");
+
+}
+.proj-prev
+{
+	display: flex;
+	flex-direction: row-reverse;
+	height: 600px;
+	padding: 20px 0px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+}
+.textProject{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.textProject >h3{
+	font-size: 40px;
+}
+.proj-prev--black
+{
+	background-color: rgba(0,0,0,0.9);
+	
+
+}
+.proj-prev--black--h3clair
+{
+	color: #79754b;
+}
+.proj-prev--black--pclair
+{
+	color: #F9F8EF;
+}
+/*-------------------------Ateliers-----------------------*/
+#atelierContainer{
+	margin-top: 40px;	
+	width: 100%;
+	background-image: url("images/texture_ondes.jpg");
+}
+
+.innerAtelier 
+{	
+	padding: 10px;
+	box-shadow: 3px 3px 3px black;
+	background-color: rgba(0, 0, 0, 0.9);
+	color: rgba(249, 248, 239, 0.9);
+	margin: 10px;
+	border-radius: 7px;
+}
+.innerAtelier > img
+{
+	height: 200px;
+	width: 450px;
+	margin: 20px;
+}
+.ateliers{
+	justify-content: center;
+}	
+/******************************************/
+.audios
+{
+	background-color: rgba(0, 0, 0, 0.9);
+	border-radius: 20px;
+	padding: 20px 50px;
+	color: white;
+}
+.galerie{
+	padding-top: 100px;
+}
+.galerie >h3
+{
+	color: rgba(0, 0, 0, 0.7);
+	padding-left: 20px;
+	text-transform: uppercase;
+}
+.creation
+{
+	width: 300px;
+	display: flex;
+	flex-direction: column;	
+}
+.dessin
+{
+	background-color: black;
+	height: auto;	
+	border-radius: 10px;
+	margin: 40px 0px 90px 0px;
+	padding: 20px;
+}
+.creation > img{
+	height: 300px;
+	width: auto;
+}
+.legendImg
+{
+	color: white;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.webProjects
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.pageWebImg
+{
+	padding: 10px;
+	box-shadow: 3px 3px 3px black;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: rgba(249, 248, 239, 0.9);
+	border-radius: 7px;
+	display: flex;
+	margin: 10PX;
+	flex-direction: column;
+	font-family: Georgia;
+	font-size: 0.7em;
+	line-height: 1.1;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+video, .imgProj
+{
+	width: 695px; 
+	height: 538px;
+}
+form
+{
+	background-color: rgba(244, 242, 223, 0.6);
+	box-shadow: 3px 3px 3px black;
+	width: 50%;
+	margin: auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#contact{
+	justify-content: center;
+	padding: 80px 0px;
+}
+.lienTo
+{
+	font-size: 1em;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	background-color:rgba(148, 70, 22, 0.9);
+	border-radius: 10px;
+	padding: 20px;
+}
+.lienTo:hover
+{
+	opacity: 0.7;
+}
+footer
+{	
+
+	background-image: linear-gradient(rgba(219, 204, 184, 0.3), rgb(163, 149, 118, 0.5) );
+	padding: 10px;
+}
+footer>p{
+	margin: 15px;
+	font-size: 22px;
+}
+.logo
+{
+	padding: 0px 20px;
+}
+
+
+@media screen and (max-width:  1200px)
+{
+	.proj-prev
+	{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		width: 100%;		
+	}
+	
+	h1
+	{
+		font-size: 2em;
+	}
+	p{
+		font-size: 20px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	h3{
+		font-size: 40px;
+	}
+	h4{
+		font-size: 28px;
+	}
+	.dessin
+	{
+		flex-direction: column;
+	}
+	
+
+	.hamburguer{
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -110%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.7);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+		font-size: 20px;
+    }
+	.nav-item>a{
+		color: rgb(208, 205, 194);
+	}
+    .nav-menu.active{
+    left: 0;
+    }
+	.name{
+		font-size: 25px;
+	}
+	#titleWeb{
+		font-size: 50px;
+	}
+
+}
