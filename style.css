@@ -754,6 +754,7 @@ footer>p{
 	}
 	.creation>img{
 		height: auto;
+		width: 100%;
 		margin: 30px;
 	}
 	.legendImg{
