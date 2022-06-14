@@ -125,7 +125,6 @@ ul
 }
 
 .nav-link{
-	transition: 0.7s ease;
 	text-decoration: none;
 	color: #415d73;
 }
@@ -465,22 +464,24 @@ h4
 #projets{
 	margin-top: 40px;
 }
+
 .explication
 {	
 	font-style: italic;
 	font-size: 1.5em;	
 }
+
 .image_proj
 {
 	height: 100vh;
-	width: 100%;
+	min-width: 100vw;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-image: url("images/cellos.JPG");
-
 }
+
 .proj-prev
 {
 	display: flex;
@@ -760,6 +761,12 @@ footer>p{
 	.legendImg{
 		font-size: 1.7em;
 		margin-top: 1px;
+	}
+	.image_proj > .lineLeft{
+		animation: none;
+	}
+	.image_proj{
+		height: 50px;
 	}
 
 }
