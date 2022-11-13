@@ -92,20 +92,20 @@ header
 /*navigation/Menu*/
 nav{
 	min-height: 70px;
+	width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+
 }
 .nav-menu{
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     gap: 60px;
 }
 #logo{
 	height: 6em;
-	margin-left: 40px;
+
 }
 ul
 {
@@ -268,9 +268,7 @@ ul
 }
 
 /*---------------------Portafolio--------------------------*/
-#portafolio{
-	padding-top: 70px;
-}
+
 
 #portafolioContainer{	
 	width: 95%;
@@ -369,9 +367,8 @@ ul
 
 #competences{
 	background-image: url('../images/computer.jpg');		
-	padding: 100px 40px 0px 40px ;
 	background-size: cover;	
-	
+	padding-top: 50px;
 }
 #competences2{
 	padding-bottom: 30px;
@@ -379,16 +376,15 @@ ul
 
 .innerCompetence{
 	background-color: rgba(255, 255, 255, 0.5);
-	height: 550px;
 	width: 40%;
-	margin: 70px 0px;
+	margin: 30px 0px;
 	border-radius: 20px;
 	box-shadow: 3px 2px 2px rgb(177, 172, 172);
 	text-align: center;
-	padding: 10px;
+	padding: 30px 10px;
 }
 .logoWeb{
-	margin: 30px 70px;
+	margin: 30px 0px;
 	opacity: 0.6;
 }
 .logoWeb>img{
@@ -567,7 +563,10 @@ form
 }
 #contact{
 	justify-content: center;
-	margin: 100px 0px;
+	margin-bottom: 50px;
+}
+#contact p{
+	margin-bottom: 20px;
 }
 .lienTo
 {
@@ -591,7 +590,11 @@ footer
 }
 footer>p{
 	margin: 15px;
-	font-size: 22px;
+	font-size: 15px;
+}
+footer>div{
+	display: flex;
+	justify-content: center;
 }
 .logo
 {
@@ -626,18 +629,19 @@ footer>p{
     .nav-menu{
         position: fixed;
         left: -110%;
-        top: 70px;
+        top: 50px;
         gap: 0;
         flex-direction: column;
         background-color: var(--second-color);
         width: 100%;
         text-align: center;
         transition: 0.3s;
+		padding: 0px;
     }
 
     .nav-item{
-        margin: 16px 0;
-		font-size: 40px;
+        margin: 6px 0;
+		font-size: 30px;
     }
 	.nav-item>a{
 		color: rgb(208, 205, 194);
@@ -717,6 +721,9 @@ footer>p{
 	p{
 		font-size: 10px;
 	}
+	#titleWeb{
+		font-size: 40px;
+	}
 	.itemPortafolio, .innerCompetence{
 		width: 90%;
 		height: auto;
@@ -729,7 +736,44 @@ footer>p{
 		}
 }
 @media screen and (max-width:  700px){
+	h2{
+		font-size: 1.6em;
+	}
+	h3{
+		font-size: 2em;
+	}
+	#logo {
+		height: 3.4em;
 	
+	}
+	#logosDev{
+		display: none;
+	}
+	#presentation{
+		justify-content: space-between;
+		
+	}
+	#intro{
+		margin-left: 10px;
+	}
+	#face2{
+		margin-right: 10px;
+	}
+	.name{
+		font-size: 20px;
+	}
+	#titleWeb{
+		font-size: 30px;
+	}
+	#palaiseau{
+		font-size: 18px;
+	}
+	.logo{
+		width: 25px;
+	}
+	.logoWeb {
+		margin: 10px 0px;
+	}
 	
 	
 }
