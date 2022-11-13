@@ -368,7 +368,7 @@ ul
 /*-----------------------Competences--------------------*/
 
 #competences{
-	background-image: url('images/computer.jpg');		
+	background-image: url('../images/computer.jpg');		
 	padding: 100px 40px 0px 40px ;
 	background-size: cover;	
 	
@@ -395,7 +395,7 @@ ul
 	height: 30px;
 }
 #competences2{
-	background-image: url("images/cellos.JPG");
+	background-image: url("../images/cellos.JPG");
 	background-size: cover;
 	background-position-y: 75em;
 	background-position-x: 4em;
