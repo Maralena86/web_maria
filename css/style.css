@@ -600,9 +600,7 @@ footer>p{
 
 
 @media screen and (max-width:  1200px)
-{
-	
-		
+{	
 	h1
 	{
 		font-size: 2em;
@@ -611,9 +609,7 @@ footer>p{
 	.innerAtelier >h4{
 
 		font-size: 34px;
-	}
-	
-	
+	}	
 	.hamburguer{
         display: block;
 		height: 100%;
@@ -676,7 +672,6 @@ footer>p{
 	
 
 	/*Portafolio*/
-
 	
 	/*---------------*/
 	.proj-prev
@@ -717,12 +712,24 @@ footer>p{
 	.image_proj > .lineLeft{
 		animation: none;
 	}
-
-
-	@media screen and (max-width: 600px){
-	.itemPortafolio, .innerCompetence {
-		width: 85%;
+}
+@media screen and (max-width:  900px){
+	p{
+		font-size: 10px;
 	}
-	}	
-
+	.itemPortafolio, .innerCompetence{
+		width: 90%;
+		height: auto;
+	}
+	.lienTo{
+		font-size: 10px;
+	}
+	.logoWeb>img {
+		height: 20px;
+		}
+}
+@media screen and (max-width:  700px){
+	
+	
+	
 }
