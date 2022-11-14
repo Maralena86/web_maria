@@ -81,7 +81,7 @@
 header
 {
 	width: 100%;
-	min-width: 500px;
+
 	height: auto;	
 	position: fixed;
 	z-index: 1;
@@ -94,12 +94,13 @@ nav{
 	min-height: 70px;
 	width: 100%;
     display: flex;
+	justify-content: space-between;
     align-items: center;
 
 }
 .nav-menu{
     display: flex;
-
+	margin-right: 20px;
     align-items: center;
     gap: 60px;
 }
@@ -366,9 +367,12 @@ ul
 /*-----------------------Competences--------------------*/
 
 #competences{
-	background-image: url('../images/computer.jpg');		
+	background-image: url('../images/computer.jpg');
+	
+    background-attachment: fixed;
+	padding-top: 30px;	
 	background-size: cover;	
-	padding-top: 50px;
+
 }
 #competences2{
 	padding-bottom: 30px;
@@ -390,12 +394,7 @@ ul
 .logoWeb>img{
 	height: 30px;
 }
-#competences2{
-	background-image: url("../images/cellos.JPG");
-	background-size: cover;
-	background-position-y: 75em;
-	background-position-x: 4em;
-}
+
 
 /*-------------------Artistique-------*/
 
@@ -484,6 +483,9 @@ ul
 	color: rgba(249, 248, 239, 0.9);
 	margin: 10px;
 	border-radius: 7px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .innerAtelier > img
 {
@@ -496,23 +498,24 @@ ul
 }	
 /******************************************/
 
-.galerie{
+.galerie-container{
 	padding-top: 100px;
+	background-color: var(--primary-color);
 }
 
 .creation
-{
-	
+{	
 	display: flex;
 	flex-direction: column;	
+	align-items: center;
 }
 .dessin
 {
-	background-color: black;
+	background-color: rgb(3, 16, 26);
 	height: auto;	
-	border-radius: 10px;
-	margin: 40px 0px 90px 0px;
+
 	padding: 20px;
+	gap: 20px;
 }
 .creation > img{
 	height: 300px;
@@ -522,6 +525,7 @@ ul
 {
 	color: white;
 	font-style: italic;
+	margin-top: 10px;
 	font-size: 0.8em;
 }
 
@@ -610,12 +614,11 @@ footer>div{
 	}	
 	
 	.innerAtelier >h4{
-
 		font-size: 34px;
 	}	
 	.hamburguer{
         display: block;
-		height: 100%;
+		margin-right: 20px;
     }
     .hamburguer.active .bar:nth-child(2){
         opacity: 0;
@@ -684,13 +687,13 @@ footer>div{
 		display: flex;
 		flex-direction: column-reverse;
 		height: auto;
-		width: 100%;		
+		width: 100%;
+		gap: 30px;		
 	}
-	.proj-prev>div{
-		padding: 30px;
-	}
+	
 	.audios, .innerAtelier{
 		width: 85%;
+		padding: 5px;
 	}
 	.innerAtelier>img{
 		width: 80%;
@@ -707,19 +710,19 @@ footer>div{
 	.creation>img{
 		height: auto;
 		width: 100%;
-		margin: 30px;
+
 	}
-	.legendImg{
-		font-size: 1.7em;
-		margin-top: 1px;
-	}
+	
 	.image_proj > .lineLeft{
 		animation: none;
+	}
+	iframe{
+		margin: 0px auto;
 	}
 }
 @media screen and (max-width:  900px){
 	p{
-		font-size: 10px;
+		font-size: 20px;
 	}
 	#titleWeb{
 		font-size: 40px;
@@ -776,4 +779,33 @@ footer>div{
 	}
 	
 	
+}
+@media screen and (max-width:  700px){
+	.bar {
+		width: 32px;
+		margin: 7px auto;
+	}
+	#titleWeb{
+		font-size: 23px;	
+	}
+	.name{
+		font-size: 15px;
+	}
+	#palaiseau{
+		font-size: 13px;
+	}
+	.logo {
+		padding: 0px 10px;
+	}
+	.descriptionAbout {
+		margin: 10px auto;
+	}
+}
+@media screen and (max-width:  500px){
+.creation>img {
+    height: 400px;
+}
+.dessin {
+	padding: 0px;
+}
 }
