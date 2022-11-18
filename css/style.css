@@ -632,7 +632,7 @@ footer>div{
     .nav-menu{
         position: fixed;
         left: -110%;
-        top: 50px;
+        top: 80px;
         gap: 0;
         flex-direction: column;
         background-color: var(--second-color);
@@ -739,6 +739,9 @@ footer>div{
 		}
 }
 @media screen and (max-width:  700px){
+	.nav-menu {
+		top: 45px;
+	}
 	h2{
 		font-size: 1.6em;
 	}
@@ -783,7 +786,7 @@ footer>div{
 @media screen and (max-width:  700px){
 	.bar {
 		width: 32px;
-		margin: 7px auto;
+	
 	}
 	#titleWeb{
 		font-size: 23px;	
