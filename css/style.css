@@ -81,11 +81,11 @@
 header
 {
 	width: 100%;
-
+	background: linear-gradient(  rgb(2, 21, 36), var(--primary-color) 95%);
 	height: auto;	
 	position: fixed;
 	z-index: 1;
-	background-color: var(--primary-color);
+	background-color:rgb(8, 16, 22);
 
 }
 
@@ -103,15 +103,17 @@ nav{
 	margin-right: 20px;
     align-items: center;
     gap: 60px;
+	padding-right: 2rem;
 }
 #logo{
-	height: 6em;
-
+	height: 4em;
+	margin-left: 1rem;
 }
 ul
 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	list-style-type: none;
+	font-weight: lighter;
 }
 
 .nav-item a:hover
@@ -149,22 +151,32 @@ ul
 /*------ Presentation ------*/
 
 #presentation{
-	background-color: var(--primary-color);
+	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
 	color: white;	
-	min-width: 100vw;			
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+    gap: 10em;
+	align-items: center;
+		
+}
+#intro{
+	padding-left: 2rem;
 }
 
 .name{
 	color: var(--primarylight-color);
 	text-align: start;
-	font-size: 55px;
+	font-size: 2rem;
+	color: rgb(188, 219, 224);
 	margin-bottom: 10px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-transform: uppercase;
+	margin-left: 0.4rem;
 	-webkit-box-reflect: below -30px linear-gradient(transparent, rgba(53, 20, 14, 0.1));	 
-	font-weight: lighter;
+	font-weight: 200;
 
 	transform: scale(0.9);
-	animation: scaled 12s forwards cubic-bezier(0.7, 1, 0.89, 1)	
+	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1)	
 }
 @keyframes scaled {
 	100% {
@@ -173,13 +185,14 @@ ul
 }
 
 #titleWeb{	
-	font-size: 80px;
+	font-size: 4.2rem;
 	text-align: start;
 	letter-spacing: -2px;
 	font-family: sans-serif;
 	margin: 10px 0px;
 	background-size: 180% auto;
 	background-clip: text;
+	
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: textclip 6s linear infinite;
@@ -201,19 +214,23 @@ ul
 }
 
 #palaiseau{
-	font-size:23px;
+	font-size:1.5rem;
 	text-align: start;
-	
-
-
+	transform: scale(0.9);
+	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1)	
 }
-
+.intro-image-container{
+	width: 30%;
+	margin-top: 2rem;
+}
 #face2{	
-	width: 20%;
+	width: 80%;
+	border-radius: 20px;
 	opacity: 0.7;	
 }
 .lineLeft {
-	animation: 5s anim-lineLeft ease-in ;
+	animation: 4s anim-lineLeft ease-in ;
+	box-shadow: 6px 3px 12px black;
 }
 	@keyframes anim-lineLeft {
 	0% {
@@ -247,8 +264,7 @@ ul
 #aboutMe{
 	display: flex;	
 	align-items:flex-end;
-	justify-content: space-between;	
-	
+	justify-content: space-between;		
 	color:var(--primary-color);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -274,23 +290,26 @@ ul
 	width: 95%;
 	text-align: center;
 	border-radius: 20px;
+	padding: 3rem 0;
 }
 
 #innerPortafolio{
 	flex-wrap: wrap;
-	margin: 80px 0px;
+	width: 80%;
+    margin: 1rem auto;
 	border-radius: 10px;
-	gap: 60px;
+	gap:2rem;
 	background-position: center;
 	background-size: cover;
 }
 
 .itemPortafolio{
 	position: relative;
-	width: 370px;
-	height: 250px;
+	width: 315px;
+    height: 220px;
 	border-radius: 10px;
 	overflow: hidden;
+	opacity: 0.7;
 	font-size: 10px;
 }
 
@@ -366,34 +385,43 @@ ul
 /*-----------------------Competences--------------------*/
 
 #competences{
-	background-image: url('../images/computer.jpg');
-	
+	background-image: url('../images/computer.jpg');	
     background-attachment: fixed;
-	padding-top: 30px;	
+	padding: 2rem 0;	
 	background-size: cover;	
-
 }
-#competences2{
-	padding-bottom: 30px;
+.competences-container{
+	display: flex;
+	gap: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .innerCompetence{
-	background-color: rgba(255, 255, 255, 0.5);
-	width: 40%;
-	margin: 30px 0px;
+	background:linear-gradient(rgb(124 124 124 / 7%), rgb(4 22 34 / 54%));
+	width: 30%;	
 	border-radius: 20px;
-	box-shadow: 3px 2px 2px rgb(177, 172, 172);
 	text-align: center;
-	padding: 30px 10px;
+	padding: 2rem;
+	color: white;
+
+}
+.innerCompetence p{
+	line-height: 2;
+	text-align: left;
 }
 .logoWeb{
-	margin: 30px 0px;
-	opacity: 0.6;
+	opacity: 0.5;
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
 }
 .logoWeb>img{
-	height: 30px;
+	height: 1.2rem;
 }
-
+#cv{
+	width: 100px;
+}
 
 /*-------------------Artistique-------*/
 
@@ -449,7 +477,8 @@ ul
 
 .proj-prev--black--h3clair
 {
-	color: #9a8549;
+	color: #ce811e;
+	font-weight: 100;
 }
 .proj-prev--black--pclair
 {
@@ -578,13 +607,16 @@ form
 }
 .lienTo
 {
-	font-size: 1.2em;
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	background-color:rgba(148, 70, 22, 0.9);
+	background-color:var(--third-color);
 	border-radius: 10px;
 	padding: 20px;
+	font-size: 1rem;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
 }
 .lienTo:hover
 {
@@ -730,9 +762,7 @@ footer>div{
 	}
 }
 @media screen and (max-width:  900px){
-	p{
-		font-size: 20px;
-	}
+
 	#titleWeb{
 		font-size: 40px;
 	}

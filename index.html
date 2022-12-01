@@ -14,11 +14,11 @@
 			<nav>
 				<a href="index.html"> <img src="images/logo.png" alt="logo" id="logo"></a>	
 				<ul class="nav-menu">
-					<li class="nav-item"><a href="index.html" class="nav-link">ACCUEIL</a></li>
-					<li class="nav-item"><a href="index.html#portafolio" class="nav-link">PORTFOLIO</a></li>
-					<li class="nav-item"><a href="artistique.html" class="nav-link">ARTISTIQUE</a></li>
-					<li class="nav-item"><a href="galerie.html" class="nav-link">GALERIE</a></li>
-					<li class="nav-item"><a href="index.html#contact" class="nav-link">CONTACT</a></li>	
+					<li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+					<li class="nav-item"><a href="index.html#portafolio" class="nav-link">Portfolio</a></li>
+					<li class="nav-item"><a href="artistique.html" class="nav-link">Artistique</a></li>
+					<li class="nav-item"><a href="galerie.html" class="nav-link">Galerie</a></li>
+					<li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>	
 				</ul>
 				<div class="hamburguer">
 					<span class="bar"></span>
@@ -27,14 +27,15 @@
 				</div>
 			</nav>	
 		</header>	
-			<section id="presentation" class="flex">
+			<section id="presentation" >
 					<div id="intro">
-						<h3 class="name">HELENA VASQUEZ</h3>
+						<h3 class="name">Helena Vasquez</h3>
 						<h1 id="titleWeb">DEVELOPPEUSE WEB<br>& ARTIST</h1>
 						<p id="palaiseau">Palaiseau, France</p>
 					</div>
-					
-					<img src="images/portrait.png" class="lineLeft" id="face2" alt="face">
+					<div class="intro-image-container">
+						<img src="images/portrait.png" class="lineLeft" id="face2" alt="face">
+					</div>
 			</section>
 			<div id="aboutMe" >	
 				<img src="images/faceBlow.png" class="lineRight" alt="face" id="face" width="400">
@@ -54,7 +55,7 @@
 			<div id="portafolio" class="flexCol dark-container">						
 				<div id="portafolioContainer">
 					<h3 >PORTFOLIO</h3>	
-					<p>Tout à long de ma formation j'ai réalisé des projets pour mettre en pratique mes connaissances. Quelques pages sont en cours d'amélioration.</p>
+					<p></p>
 					<div id="innerPortafolio" class="flex">
 						<div class="itemPortafolio">
 							<img src="images/portafolio/zikhouse.png" alt=""> 
@@ -157,9 +158,9 @@
 			</div> -->
 			<div id="competences">
 				<h3 class="fontWhite">COMPETENCES</h3>
-				<div class="flex" id="competences1">
-					<div id="frontEnd" class="innerCompetence">					
-						<div class="flex logoWeb">
+				<div class="competences-container">
+					<div class="innerCompetence">					
+						<div class="logoWeb">
 							<img src="images/logos/html.png" alt="logos" >
 							<img src="images/logos/css.svg" alt="logo css" height="35">
 							<img src="images/logos/java_script.svg" alt="javascript" >
@@ -174,8 +175,8 @@
 							<p>Edition et création d'images (gimp et illustrator)</p>
 							<p>Utilisation de React</p>
 					</div>
-					<div id="backEnd" class="innerCompetence">				
-						<p class="flex logoWeb"><img src="images/logos/php.png"  alt="logo" ><img src="images/logos/MySQL.png"  alt="logo" ><img src="images/logos/mamp-pro.png" alt="logo"><img src="images/logos/symfony.png" alt="logo"> </p>
+					<div class="innerCompetence">				
+						<p class="logoWeb"><img src="images/logos/php.png"  alt="logo" ><img src="images/logos/MySQL.png"  alt="logo" ><img src="images/logos/mamp-pro.png" alt="logo"><img src="images/logos/symfony.png" alt="logo"> </p>
 						<h2>BACK-END</h2>
 						<p>Création et gestion de base de données</p>
 						<p>Utilisation de fixtures</p>
@@ -184,12 +185,8 @@
 						<p>Création de formulaires de recherche et de récupération de données</p>
 						<p></p>
 					</div>
-					
-				
-			</div>
-				<div class="flexCol" id="competences2">
-					<div id="audioVideo" class="innerCompetence">				
-						<p class="flex logoWeb"><img src="images/logos/Reaper_Logo.png"  alt="logo"><img src="images/logos/garageband.png" alt="logo"> <img src="images/logos/reason_logo.png" alt="logo"> <img src="images/logos/finale.png" alt="logo"><img src="images/logos/daVinciResolve.webp" alt="logo"><img src="images/logos/iMovie.png" alt="logo"><img src="images/logos/homebyme.png" alt="logo"></p>
+					<div class="innerCompetence">				
+						<p class="logoWeb"><img src="images/logos/Reaper_Logo.png"  alt="logo"><img src="images/logos/garageband.png" alt="logo"> <img src="images/logos/reason_logo.png" alt="logo"> <img src="images/logos/finale.png" alt="logo"><img src="images/logos/daVinciResolve.webp" alt="logo"><img src="images/logos/iMovie.png" alt="logo"><img src="images/logos/homebyme.png" alt="logo"></p>
 						<h2>AUDIO, VIDEO ET AUTRES</h2>
 						<p>Réalisation de partitions (Finale, musescore)</p>
 						<p>Enregistrement et édition d'audio (Reason, Adobe-audition, Sonar, Studio-one)</p>
@@ -198,7 +195,13 @@
 						<p>Interprétation de violon et violoncelle</p>
 						<p>Traitement d'images (gimp)</p>
 					</div>
-					<a href="docs/cv_MariaVasquez_devWeb.pdf" class="lienTo">MON CV</a>
+				</div>
+					<a href="docs/cv_MariaVasquez_devWeb.pdf" class="lienTo" id="cv">MON CV</a>
+				
+				
+			</div>
+				
+					
 				</div>
 				
 			</div>
