@@ -218,15 +218,17 @@ ul
 }
 .intro-image-container{
 	width: 27%;
+	
 }
 #face2{	
 	width: 70%;
-	border-radius: 20px;
-	opacity: 0.7;	
+	opacity: 0.5;
+	background-color: rgb(227, 223, 235);
+
 }
 .lineLeft {
 	animation: 4s anim-lineLeft ease-in ;
-	box-shadow: 6px 3px 12px black;
+
 }
 	@keyframes anim-lineLeft {
 	0% {
@@ -234,7 +236,7 @@ ul
 		transform: translateX(50%);
 	}		
 	100% {
-		opacity: 0.6;
+		opacity: 0.5;
 		transform: translateX(0%);
 	}
 }
@@ -307,15 +309,26 @@ ul
 	font-size: 10px;
 	box-shadow: 1px 4px 8px black;
 }
+.img-portafolio-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(51, 6, 41);
+}
+.img-portafolio-container img{
+	height: 40px;
+	border-radius: 10px;
+}
 
 .itemPortafolio>img{
 	display: block;
 	width: 100%;
-	height: auto;
-	
+	height: auto;	
 	box-shadow: 4px 4px 4px black;
 	height: 100%;
-	opacity: 0.6;
+
 }
 
 .overlay{
