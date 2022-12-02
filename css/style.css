@@ -383,7 +383,7 @@ ul
 /*-----------------------Competences--------------------*/
 
 #competences{
-	background-image: url('../images/computer.jpg');	
+	/* background-image: url('../images/computer.jpg');	 */
     background-attachment: fixed;
 	padding: 2rem 0;	
 	background-size: cover;	
@@ -397,7 +397,7 @@ ul
 }
 
 .innerCompetence{
-	background:linear-gradient(rgb(124 124 124 / 7%), rgb(4 22 34 / 54%));
+	background:linear-gradient(rgb(21, 3, 49), black);
 	width: 30%;	
 	border-radius: 20px;
 	text-align: center;
@@ -418,7 +418,7 @@ ul
 }
 .logoWeb>img{
 	height: 1.2rem;
-	opacity: 0.5;
+	opacity: 0.8;
 }
 #cv{
 	width: 100px;
@@ -603,7 +603,7 @@ form
 #contact{
 	justify-content: center;
 	padding: 3rem;
-	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
+	background: black;
 }
 #contact p{
 	margin-bottom: 20px;
@@ -613,8 +613,8 @@ form
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	background-color:var(--second-color);
-	color: var(--primary-color);
+	background: linear-gradient(    rgb(28, 8, 95), var(--primary-color));
+	color: white;
 	font-weight: bold;
 	border-radius: 10px;
 	padding: 20px;
@@ -642,9 +642,11 @@ footer>div{
 	display: flex;
 	justify-content: center;
 }
-.logo
-{
-	padding: 0px 20px;
+.logos-contact{
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin: 3rem 0;
 }
 
 
