@@ -156,12 +156,11 @@ ul
 	display: flex;
 	justify-content: center;
     flex-wrap: wrap;
-    gap: 10em;
 	align-items: center;
 		
 }
 #intro{
-	padding-left: 2rem;
+	width: 60%;
 }
 
 .name{
@@ -169,9 +168,8 @@ ul
 	text-align: start;
 	font-size: 2rem;
 	color: rgb(188, 219, 224);
-	margin-bottom: 10px;
 	text-transform: uppercase;
-	margin-left: 0.4rem;
+	margin: 0;
 	-webkit-box-reflect: below -30px linear-gradient(transparent, rgba(53, 20, 14, 0.1));	 
 	font-weight: 200;
 
@@ -189,10 +187,9 @@ ul
 	text-align: start;
 	letter-spacing: -2px;
 	font-family: sans-serif;
-	margin: 10px 0px;
+	margin: 0.4rem 0;
 	background-size: 180% auto;
-	background-clip: text;
-	
+	background-clip: text;	
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: textclip 6s linear infinite;
@@ -220,11 +217,10 @@ ul
 	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1)	
 }
 .intro-image-container{
-	width: 30%;
-	margin-top: 2rem;
+	width: 27%;
 }
 #face2{	
-	width: 80%;
+	width: 70%;
 	border-radius: 20px;
 	opacity: 0.7;	
 }
@@ -600,7 +596,8 @@ form
 }
 #contact{
 	justify-content: center;
-	margin-bottom: 50px;
+	padding: 3rem;
+	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
 }
 #contact p{
 	margin-bottom: 20px;
@@ -610,7 +607,9 @@ form
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	background-color:var(--third-color);
+	background-color:var(--second-color);
+	color: var(--primary-color);
+	font-weight: bold;
 	border-radius: 10px;
 	padding: 20px;
 	font-size: 1rem;
@@ -624,13 +623,14 @@ form
 }
 footer
 {	
-
-	background-image: linear-gradient(rgba(219, 204, 184, 0.3), rgb(163, 149, 118, 0.5) );
-	padding: 10px;
+	background-color: var(--primary-color);
+	padding: 10px;	
+	color: white;
 }
 footer>p{
-	margin: 15px;
-	font-size: 15px;
+	margin-top: 0.4rem;
+	font-family: sans-serif;
+	font-size: 0.3rem;
 }
 footer>div{
 	display: flex;
@@ -698,6 +698,10 @@ footer>div{
 		min-height: 80vh;
 	}
 	/*--------index-----------*/
+	#titleWeb{
+		font-size: 3rem;
+	}
+
 	.name{
 		font-size: 40px;
 	}
@@ -706,9 +710,7 @@ footer>div{
 		font-size: 35px;
 	}
 
-	#titleWeb{
-		font-size: 50px;
-	}
+	
 
 	#face{
 		display: none;
@@ -766,8 +768,12 @@ footer>div{
 	#titleWeb{
 		font-size: 40px;
 	}
-	.itemPortafolio, .innerCompetence{
+	.itemPortafolio{
 		width: 90%;
+		height: auto;
+	}
+	 .innerCompetence{
+		width: 70%;
 		height: auto;
 	}
 	.lienTo{
@@ -776,6 +782,18 @@ footer>div{
 	.logoWeb>img {
 		height: 20px;
 		}
+}
+@media screen and (max-width:  950px){
+	
+	.name{
+		font-size: 1.2rem;
+	}
+	#palaiseau{
+		font-size: 1rem;
+	}
+	#intro{
+		margin-left: 10px;
+	}
 }
 @media screen and (max-width:  700px){
 	.nav-menu {
@@ -794,48 +812,21 @@ footer>div{
 	#logosDev{
 		display: none;
 	}
-	#presentation{
-		justify-content: space-between;
-		
-	}
-	#intro{
-		margin-left: 10px;
-	}
-	#face2{
-		margin-right: 10px;
-	}
-	.name{
-		font-size: 20px;
-	}
-	#titleWeb{
-		font-size: 30px;
-	}
-	#palaiseau{
-		font-size: 18px;
-	}
+	
+	
 	.logo{
 		width: 25px;
 	}
 	.logoWeb {
 		margin: 10px 0px;
+		gap: 1rem;
 	}
-	
-	
-}
-@media screen and (max-width:  700px){
+
 	.bar {
 		width: 32px;
 	
 	}
-	#titleWeb{
-		font-size: 23px;	
-	}
-	.name{
-		font-size: 15px;
-	}
-	#palaiseau{
-		font-size: 13px;
-	}
+
 	.logo {
 		padding: 0px 10px;
 	}
@@ -849,5 +840,14 @@ footer>div{
 }
 .dessin {
 	padding: 0px;
+}
+#titleWeb{
+	font-size: 1.3rem;
+}
+.name{
+	font-size: 0.7rem;
+}
+#palaiseau{
+	font-size: 0.6rem;
 }
 }
