@@ -431,6 +431,12 @@ ul
 	height: 60px;
 	width: 60px;
 }
+/*----------------Odin Projects------------------*/
+.odinProjects{
+	padding-top: 100px;
+	background-color: rgb(2, 2, 3);
+}
+
 /*-----------------------Competences--------------------*/
 
 #competences{
