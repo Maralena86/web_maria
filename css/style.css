@@ -118,12 +118,14 @@ ul
 
 .nav-item a:hover
 {
-	color: #295f6d;
+	border-bottom: 1px solid rgb(31, 113, 124);
 }
 
 .nav-link{
 	text-decoration: none;
+	text-transform: uppercase;
 	color: white;
+	font-size: 0.8rem;
 }
 
 .hamburguer{
@@ -220,10 +222,11 @@ ul
 	width: 27%;
 	
 }
+
 #face2{	
 	width: 70%;
 	opacity: 0.5;
-	background-color: rgb(227, 223, 235);
+	background-color: rgb(9, 1, 24);
 
 }
 .lineLeft {
@@ -243,6 +246,16 @@ ul
 	
 /*----------------------About me------------------------*/
 /* lineRight class and keyframes */
+.faceContainer{
+	margin: 0;
+	display: flex;
+	align-items: flex-end;
+	align-self: flex-end;
+}
+#face{
+	width: 400px;
+	margin: 0;
+}
   .lineRight {
 	animation: 2s anim-lineRight ease-in ;
   }
@@ -261,8 +274,8 @@ ul
 }
 #aboutMe{
 	display: flex;	
-	align-items:flex-end;
-	justify-content: space-between;		
+	align-items: center;
+	min-height: 100vh;			
 	color:var(--primary-color);
 	height: 60vh;	
 }
@@ -270,7 +283,32 @@ ul
 .descriptionAbout{
 	width: 70%;
 	margin-right: 40px;
+	
+}
+.cvLink{
+	background-color: var(--primary-color);
+	padding: 0.5rem;
+	border-radius: 10px;
+	color: white;
+	box-shadow: 4px 5px 7px black;
+	transition-duration: 1s;
+	margin-top: 4rem;
+}
+.cvLink:hover{
+	scale: 1.05;
+	color: var(--fourth-color);
+}
 
+.flagsContainer{
+	display: flex;
+	gap: 1rem;
+}
+.flag>img{
+	width: 50px;
+	opacity: 0.7;
+}
+.flag>img:hover{
+	opacity: 0.4;
 }
 .icon{
 	margin: 40px;
@@ -550,7 +588,55 @@ ul
 	padding-top: 100px;
 	background-color: var(--primary-color);
 }
+.galerie{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+.slider{
+	position: relative;
+	width: 200px;
+	height: 250px;
+	transform-style: preserve-3d;
+	animation: rotate 40s linear infinite;
 
+}
+@keyframes rotate {
+	0%{
+		transform: perspective(1000px) rotateY(0deg)
+	}
+	100%{
+		transform: perspective(1000px) rotateY(360deg);
+	}
+	
+}
+.slider span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: rotateY(calc(var(--i)*45deg)) translateZ(450px);
+}
+.slider span img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+	transition: 2s;
+	border: 4px solid rgb(66, 33, 98);
+}
+.slider span:hover img{
+	transform: translateY(-50px) scale(1.1);
+}
 .creation
 {	
 	display: flex;
