@@ -213,10 +213,12 @@ ul
 }
 
 #palaiseau{
-	font-size:1.5rem;
+	font-size:1.4rem;
 	text-align: start;
 	transform: scale(0.9);
-	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1)	
+	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1);	
+	font-weight: lighter;
+	color: rgb(142, 174, 175);
 }
 .intro-image-container{
 	width: 27%;
@@ -384,7 +386,9 @@ ul
 	
 	
 }
-
+.portafolio-logo{
+	width: 70px;
+} 
 .itemPortafolio:hover .overlay{
 	opacity: 1;
 }
@@ -431,6 +435,7 @@ ul
 	height: 60px;
 	width: 60px;
 }
+
 /*----------------Odin Projects------------------*/
 .odinProjects{
 	padding-top: 100px;
@@ -490,13 +495,31 @@ ul
 #projets{
 	margin-top: 40px;
 }
-
+.proj-prev img{
+	height: 80%;
+}
 .explication
 {	
 	font-style: italic;
 	font-size: 1.5em;	
 }
-
+.imgProj-container{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	position: relative;
+	
+}
+video, .imgProj
+{
+	height: 50%;
+	width: 60%;
+	border-radius: 50px;
+	box-shadow: 4px 5px 15px rgb(0, 0, 0);
+	background-image: linear-gradient(black, rgb(16, 16, 51));
+	padding: 3rem;	
+}
 .image_proj
 {
 	height: 100vh;
@@ -517,6 +540,7 @@ ul
 {
 	display: flex;
 	flex-direction: row-reverse;
+	min-height: 100vh;
 	width: 100%;
 	align-items: center;
 	justify-content: space-around;
@@ -549,7 +573,7 @@ ul
 }
 .audios
 {
-	padding: 0px 150px;
+	padding: 50px 150px;
 	height: 100%;
 	border-radius: 10px;
 	margin-right: 10px;
@@ -607,18 +631,8 @@ ul
 	width: 200px;
 	height: 250px;
 	transform-style: preserve-3d;
-	animation: rotate 40s linear infinite;
+}
 
-}
-@keyframes rotate {
-	0%{
-		transform: perspective(1000px) rotateY(0deg)
-	}
-	100%{
-		transform: perspective(1000px) rotateY(360deg);
-	}
-	
-}
 .slider span{
 	position: absolute;
 	top: 0;
@@ -640,26 +654,34 @@ ul
 	transition: 2s;
 	border: 4px solid rgb(66, 33, 98);
 }
-.slider span:hover img{
-	transform: translateY(-50px) scale(1.1);
-}
+
 .creation
 {	
 	display: flex;
 	flex-direction: column;	
 	align-items: center;
+	width: 350px;
+	
+}
+.creation iframe{
+	
+	object-fit: contain;
+	width: 100%;
 }
 .dessin
 {
 	background-color: rgb(3, 16, 26);
 	height: auto;	
-
 	padding: 20px;
 	gap: 20px;
 }
 .creation > img{
 	height: 300px;
-	width: auto;
+	width: 350px;
+	background-color: black;
+	object-fit: contain;
+	border-radius: 5px;
+	
 }
 .legendImg
 {
@@ -692,11 +714,8 @@ ul
 	text-align: center;
 	text-decoration: none;
 }
-video, .imgProj
-{
-	width: 695px; 
-	height: 538px;
-}
+
+
 form
 {
 	background-color: rgba(244, 242, 223, 0.6);

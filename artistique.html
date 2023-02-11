@@ -36,13 +36,15 @@
 			<h1 class=" lineLeft">Mon parcours artistique</h1>
 		</div>
 		</section>	
-		<h2>Musique</h2>						
-		<p>
-				Tout au long de mon expérience artistique, j'ai eu l'occasion de réaliser différentes collaborations. Cela m'a permis de m'adapter aux spécialités de chaque forme d'art et a également contribué au développement de ma créativité. 
-		</p>
-		<p>
-				J'ai commencé avec la musique à l'age de 8 ans. J'allais presque tous les jours au conservatoire pour faire des cours de violon, solfège et orchestre. À 15 ans j'ai fait une pause mais à 18 ans j'ai returné pour faire une licence. J'ai étudié à l'academie des arts de Bogota, un endroit où les arts se retrouvent. J'ai eu l'opportunité de partager avec des comèdiens, plasticiens et danseurs.
-		</p>
+		<section class="flexCol">
+			<h2>Musique</h2>						
+			<p>
+					Tout au long de mon expérience artistique, j'ai eu l'occasion de réaliser différentes collaborations. Cela m'a permis de m'adapter aux spécialités de chaque forme d'art et a également contribué au développement de ma créativité. 
+			</p>
+			<p>
+					J'ai commencé avec la musique à l'age de 8 ans. J'allais presque tous les jours au conservatoire pour faire des cours de violon, solfège et orchestre. À 15 ans j'ai fait une pause mais à 18 ans j'ai returné pour faire une licence. J'ai étudié à l'academie des arts de Bogota, un endroit où les arts se retrouvent. J'ai eu l'opportunité de partager avec des comèdiens, plasticiens et danseurs.
+			</p>
+		</section>
 		<div id="projets">
 			<div class="proj-prev dark-container">		
 				<div class="textProject">
@@ -52,15 +54,14 @@
 						La ville est un projet en cours qui mélange image, musique et une histoire. Des petites histoires se succedent derrière les fênetres de cette grande ville. 
 					</p>
 				</div>
-				<div>
+				<div class="imgProj-container">
 					<video class="videoProjet" src="video/la_ville.mp4" poster="images/la_ville.jpg" controls ></video>
 				</div>				
 			</div>
-			<div class="proj-prev">
-				<div class= "ImgLuz">
-					<div><img class= "imgLuz" src="images/souvenirs.JPG" alt="cajaLuz"></div>
-						
-				</div>
+			<div class="proj-prev">		
+				<div class="imgProj-container">
+					<img class= "imgLuz imgProj" src="images/souvenirs.JPG" alt="cajaLuz">
+				</div>			
 					<div class="textProject">
 					<h3>SOUVENIRS</h3>
 					<h4>Arts plastiques et musique</h4>
@@ -75,14 +76,14 @@
 					<h4 class="soust">Musique et danse</h4>
 					<p class="proj-prev--black--pclair">Projet réalisé avec des danseurs. Mise en scène</p>
 				</div>
-				<div>			
+				<div class="imgProj-container">			
 					<video class="videoProjet imgProj" src="video/pizzicato.mp4" poster="images/pizzicato.JPG" controls ></video>
 				</div>
 			</div>
 				
 			<div class="proj-prev">					
-				<div>
-					<img src="images/conte.jpg" alt="conte école">
+				<div class="imgProj-container">
+					<img src="images/conte.jpg" class="imgProj" alt="conte école">
 				</div>
 				<div class="textProject">
 						<h3>LES ANIMAUX ÇA CONTE ENORMÉMENT</h3>
@@ -96,7 +97,7 @@
 						<h4>Musique et theatre</h4>
 					<p class="proj-prev--black--pclair">Collaboration avec la "Casa del Silencio" à Bogota. Theatre du geste </p>
 				</div>
-				<div>
+				<div class="imgProj-container">
 					<img src="images/theatre.jpg" alt="theatre et musique" class="imgProj">
 				</div>				
 			</div>
@@ -141,7 +142,76 @@
 					<img src="images/dumi.jpg" alt="dumi">		
 				</div>
 			</div>
-		</div>	
+		</div>
+		<section class="galerie-container">	
+		
+			<h2>Video/StopMotion,</h2>
+			<div class="dessin flex">
+				<div class="creation">
+					<img class="gif" src="images/stopmotion.gif" alt="stopmotion">
+					<p class="legendImg">Stop motion du projet: "Voyage musical"</p>
+					
+				</div>
+				<div class="creation">
+					<img class="gif" src="images/coach-art.gif" alt="404 gif" >
+					<p class="legendImg">Stop motion du projet: "Voyage musical"</p>
+				</div>
+				<div class="creation">
+					<iframe  src="https://www.youtube.com/embed/SBP1cEzaWwY?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<p class="legendImg">Video réalisé en collaboration avec Ludovic Leconte pour la fête de la science de l'Institue Curie</p>
+				</div>
+			
+		</div>
+		
+		<div class="galerie">
+			<h2 >Illustration</h2>
+			<div class="dessin flex">
+				<div class="creation">
+					<img src="images/colmar_acquarelle.png" title="Sainte Pierre de Varengeville, acquarelle" alt="acquarelle"/>
+					<p class="legendImg">Colmar. Acquarelle</p>
+				</div>
+				<div class="creation">
+					<img src="images/normandie_acquarelle.jpg"  alt="acquarelle"/>
+					<p class="legendImg">Saint Pierre de Varengeville. Acquarelle</p>
+				</div>
+				<div class="creation">
+					<img src="images/microscope_dessin.jpg" alt="microscope">
+					<p class="legendImg">Illustration microscope. Crayon en noir</p>
+				</div>
+				<div class="creation">
+					<img src="images/foule_acrilique.jpg" alt="acrilique">
+					<p class="legendImg">La foule. Acrilique</p>
+				</div>
+				<div class="creation">
+					<img src="images/chats.jpg" height="300" alt="illustration">
+					<p class="legendImg" >La planète des chats. Crayons</p>
+				</div>
+			</div>
+		</div>
+		<div class="galerie">
+			<h2>Pop-up</h2>
+			<div class="dessin flex">
+				<div class="creation">
+					<img src="images/popUp.JPG" alt="Pop-up" >
+				</div>
+				<div class="creation">
+					<img src="images/chambre_tortue.JPG" alt="Pop-up">
+				</div>
+				<div class="creation">
+					<img src="images/batiment.png" alt="Pop-up" >
+				</div>
+			</div>
+		</div>
+		<div class="galerie">
+			<h2>spectacles</h2>
+			<div class="dessin flex">
+				<div class="creation"><img src="images/BIENPARIDOS.JPG" alt="creation" ></div>
+				<div class="creation"><img src="images/pizzicato2.JPG" alt="creation" ></div>
+				<div class="creation"><img src="images/cortazar.png" alt="creation"> </div>
+				<div class="creation"><img src="images/concert.jpg" alt="creation" ></div>
+			</div>
+		</div>		
+	</section>	
 	</div>	
 	<footer>
 		<p>@2022 Helena Vasquez</p>
