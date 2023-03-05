@@ -118,14 +118,16 @@ ul
 
 .nav-item a:hover
 {
-	border-bottom: 1px solid rgb(31, 113, 124);
+	border-bottom: 1px solid var(--fourth-color);
 }
 
 .nav-link{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
-	font-size: 0.8rem;
+	font-size: 1rem;
+	padding: 0.5rem;
+	
 }
 
 .hamburguer{
@@ -153,28 +155,21 @@ ul
 /*------ Presentation ------*/
 
 #presentation{
-	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
 	color: white;	
 	display: flex;
 	justify-content: center;
     flex-wrap: wrap;
 	align-items: center;
-		
+	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
+	gap: 9rem;
 }
-#intro{
-	width: 60%;
-}
-
-.name{
-	color: var(--primarylight-color);
-	text-align: start;
+.name{	
+	text-align: end;
 	font-size: 2rem;
-	color: rgb(188, 219, 224);
-	text-transform: uppercase;
-	margin: 0;
+	margin-bottom: 2rem;
+	color: rgb(216, 197, 228);
 	-webkit-box-reflect: below -30px linear-gradient(transparent, rgba(53, 20, 14, 0.1));	 
 	font-weight: 200;
-
 	transform: scale(0.9);
 	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1)	
 }
@@ -183,27 +178,27 @@ ul
 	  transform: scale(1);
 	}
 }
-
 #titleWeb{	
 	font-size: 4.2rem;
-	text-align: start;
+	text-align: end;
+	text-transform: uppercase;
 	letter-spacing: -2px;
 	font-family: sans-serif;
-	margin: 0.4rem 0;
+	margin:1rem 0;
 	background-size: 180% auto;
 	background-clip: text;	
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: textclip 6s linear ;
+	animation: textclip 5s linear ;
 	background-image: linear-gradient(
     -225deg,
-    #214d4e 0%,
-    #295f6d 19%,
-    
-	#b15f79 67%,
-    #587417 80%,
-	#155a66 90%,
-	#214d4e 100%
+	#3e214e 0%,
+    var(--second-color) 15%,
+    var(--fourth-color) 25%,  
+    #214d4e 60%,
+	#29306d 70%,
+	#400c49 80%
+	
   );     
 }
 @keyframes textclip {
@@ -220,29 +215,25 @@ ul
 	font-weight: lighter;
 	color: rgb(142, 174, 175);
 }
-.intro-image-container{
-	width: 27%;
-	
-}
+
 
 #face2{	
-	width: 70%;
-	opacity: 0.5;
-	background-color: rgb(9, 1, 24);
+	opacity: 0.8;
+
 
 }
 .lineLeft {
-	animation: 4s anim-lineLeft ease-in ;
+	animation: 6s anim-lineLeft ease-in ;
 
 }
 	@keyframes anim-lineLeft {
 	0% {
 		opacity: 0;
-		transform: translateX(50%);
+		
 	}		
 	100% {
 		opacity: 0.5;
-		transform: translateX(0%);
+		
 	}
 }
 	
@@ -342,12 +333,32 @@ ul
 .itemPortafolio{
 	position: relative;
 	width: 315px;
-    height: 220px;
-	border-radius: 10px;
+	border-radius: 5px;
+	height: 300px;
 	overflow: hidden;
 	opacity: 0.7;
 	font-size: 10px;
 	box-shadow: 1px 4px 8px black;
+	background: linear-gradient(#3f1724, #0e0d1d) ;
+	padding: 0.5rem;
+	transition-duration: 1s;
+}
+.itemPortafolio:hover{
+	scale: 1.05;
+}
+.img-portafolio{
+	height: 220px;
+	width: 95%;
+	border-radius: 10px;
+}
+.portfolioTextFace h3{
+	font-size: 1.3rem;
+	font-family: 'Times New Roman', Times, serif;
+	color: rgb(169, 137, 199);
+	margin:1rem;
+}
+.portfolioTextFace p{
+	font-size: 0.8rem;
 }
 .img-portafolio-container{
 	width: 100%;
@@ -387,7 +398,8 @@ ul
 	
 }
 .portafolio-logo{
-	width: 70px;
+	height: 1rem;
+	margin-top: 0.5rem;
 } 
 .itemPortafolio:hover .overlay{
 	opacity: 1;
@@ -460,28 +472,37 @@ ul
 
 .innerCompetence{
 	background:linear-gradient(rgb(21, 3, 49), black);
-	width: 30%;	
+	width: 20%;	
 	border-radius: 20px;
 	text-align: center;
 	padding: 2rem;
 	color: white;
 
 }
+.innerCompetence h3{
+	margin: 2rem ;
+	font-size: 1.5rem;
+}
 .innerCompetence p{
 	line-height: 2;
-	text-align: left;
+	font-size: 1.2rem;
 }
 .logoWeb{
 	opacity: 0.5;
 	display: flex;
 	justify-content: center;
-	gap: 3rem;
-	margin-top: 3rem;
+	gap: 2rem;
+	margin-top: 0.5rem;
+	
 }
 .logoWeb>img{
-	height: 1.2rem;
-	opacity: 0.8;
+	height: 1.2rem;	
+	transition-duration: 1s;
 }
+.logoWeb>img:hover{
+	scale: 1.7;
+	cursor: pointer;
+} 
 #cv{
 	width: 100px;
 	margin-top: 4rem;
@@ -737,7 +758,7 @@ form
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	background: linear-gradient(    rgb(28, 8, 95), var(--primary-color));
+	background: linear-gradient(    #4D224B, var(--primary-color));
 	color: white;
 	font-weight: bold;
 	border-radius: 10px;

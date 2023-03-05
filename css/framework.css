@@ -5,9 +5,9 @@
 :root
 {
     --primary-color:#050327;
-    --second-color: #3D3A78; 
+    --second-color: #4D224B; 
 	--third-color:#AD6300;
-	--fourth-color:  rgb(32, 130, 143);
+	--fourth-color:  #973F5C;
     --primarylight-color: rgb(216, 231, 231);
     --primary-font:'Nanum Gothic', sans-serif;
     --second-font: 'Signika Negative', sans-serif;
@@ -36,15 +36,18 @@ h2,h3{
 }
 h2{
     font-weight: bolder;
-    font-size: 2.5rem;
-	margin: 4rem 0;
+    font-size: 2rem;
+
+}
+.mg-h2{
+	margin-top: 4rem;
 }
 
 h3{
 	font-size: 2.5rem;	
     color: var(--fourth-color);
 	font-weight: 300;
-	margin-bottom: 3rem;
+
 
 }
 

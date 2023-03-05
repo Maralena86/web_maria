@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="shortcut icon" href="#">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,23 +31,23 @@
 			</nav>	
 		</header>	
 			<section id="presentation" >
-					<div id="intro">
-						<h3 class="name">Hello, I'm Maria Helena</h3>
-						<h1 id="titleWeb">DEVELOPPEUSE WEB<br>& ARTIST</h1>
-						<p id="palaiseau">Palaiseau, France</p>
-					</div>
-					<div class="intro-image-container">
-						<img src="images/intro.jpg" class="lineLeft" id="face2" alt="face">
-					</div>
+				<div class="intro-image-container">
+					<img src="images/me_face.png" class="lineLeft" id="face2" alt="face">
+				</div>
+				<div id="intro">
+					<h3 class="name">Hello, I'm Helena Vasquez</h3>
+					<h1 id="titleWeb">WEB DEVELOPPER<br>& ARTIST</h1>
+					<p id="palaiseau">I'm based in France and I developpe in Javascript, Symfony and a little bit of C</p>
+				</div>
 			</section>
 			<div id="aboutMe">	
 				<div class="faceContainer">
 					<img src="images/faceBlow.png" class="lineRight" alt="face" id="face">
 				</div>
 				<div class="descriptionAbout flexCol">
-					<h3 class="fontWhite">A PROPOS DE MOI</h3>				
+					<h3 class="fontWhite">About me</h3>				
 					<p>
-						Après 10 ans d’expérience professionnelle acquise dans la réalisation de projets artistiques et pédagogiques, j’ai décidé de m’investir dans ma passion pour l’informatique. Tout au longue de mon parcours ma motivation plus forte et de m'investir dans des projets créatifs et découvrir des differents faiçons de faire et partager 
+						I made my studies in 
 					</p>
 					<div class="cvLink">
 						<p>MON CV</p>
@@ -66,23 +67,33 @@
 			</div>
 			<div id="portafolio" class="flexCol dark-container">						
 				<div id="portafolioContainer">
-					<h3 >PORTFOLIO</h3>	
+					<h2 class="mg-h2">PORTFOLIO</h2>	
 					<p>Ici vous trouverez les projets que j'ai réaliser dans differents cadres. Formatif et sur commande</p>
 					<div id="innerPortafolio" class="flex">
 						<div class="itemPortafolio">
-							<img src="images/portafolio/coach-art.png" alt="pageWeb"> 
+							<div class="portfolioTextFace">
+								<img class="img-portafolio" src="images/portafolio/coach-art.png" alt="pageWeb"> 
+								<img class="portafolio-logo" src="images/portafolio/coach-art-logo.png" alt="logo portfolio">
+								<p>Page de réservation d'evenements</p>
+							</div>
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
-									<img class="portafolio-logo" src="images/portafolio/coach-art-logo.png" alt="">
+									<img class="portafolio-logo" src="images/portafolio/coach-art-logo.png" alt="logo portfolio">
 									<p class="textPortafolio">Page réalisé pendant stage Symfony, JS</p>
 									<a href="https://coach-art-paris.fr/">Lien vers la page</a>
 								</div>
 							</div>
+							
 						</div>
 						
 						<div class="itemPortafolio">
+							<div class="portfolioTextFace">
+								<img class="img-portafolio" src="images/portafolio/boutique.png" alt="pageWeb"> 
+								<img class="portafolio-logo" src="images/portafolio/boutique-2.png" alt="">
+								
+								<p>E-commerce de vetements</p>
+							</div>
 							
-								<img src="images/portafolio/boutique.png" alt=""> 
 					
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
@@ -93,7 +104,13 @@
 							</div>
 						</div>
 						<div class="itemPortafolio">
-							<img src="images/portafolio/burguer_food.png" alt=""> 
+							<div class="portfolioTextFace">
+								<img class="img-portafolio" src="images/portafolio/burguer_food.png" alt="pageWeb"> 
+								<img class="portafolio-logo" src="images/portafolio/burguer-station.png"
+								 alt="">
+								<p>Site vitrine pour restaurant</p>
+							</div>
+							
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
 									<p class="textPortafolio">Projet réalisé avec  bootstrap (En cours d'actualisation)</p>
@@ -102,7 +119,13 @@
 							</div>
 						</div>
 						<div class="itemPortafolio">
-							<img src="images/portafolio/odin-project.png" alt="odin-project-logo"> 
+							
+							<div class="portfolioTextFace">
+								<img class="img-portafolio" src="images/portafolio/odin-project.png" alt="pageWeb"> 
+								<img class="portafolio-logo" src="images/portafolio/the-odin2.png" alt="odin project logo">
+								<p>Projets javascript pour d'odin project</p>
+							</div>
+							
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
 									<img class="portafolio-logo" src="images/portafolio/the-odin2.png" alt="odin project logo">
@@ -115,7 +138,12 @@
 						
 						
 						<div class="itemPortafolio">
-							<img src="images/portafolio/the-rLab.png" alt="pageWeb"> 
+							<div class="portfolioTextFace">
+								<img class="img-portafolio" src="images/portafolio/the-rLab.png" alt="pageWeb"> 
+								<img class="portafolio-logo" src="images/portafolio/rlab-logo.png" alt="odin project logo">
+								<p>Site vitrine et blog the r-lab, Laboratoire de microscopie</p>
+							</div>
+							
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
 									<p class="textPortafolio">the RLaboratory page</p>
@@ -124,7 +152,7 @@
 							</div>
 						</div>
 						<div class="itemPortafolio">
-							<img src="images/portafolio/ludovic_web.png" alt="pageWeb"> 
+							<img class="img-portafolio" src="images/portafolio/ludovic_web.png" alt="pageWeb"> 
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
 									<p class="textPortafolio">Page Web personal CSS HTML JS</p>
@@ -134,7 +162,7 @@
 						</div>
 						
 						<div class="itemPortafolio">
-							<img src="images/portafolio/canvas_change.png" alt=""> 
+							<img class="img-portafolio" src="images/portafolio/canvas_change.png" alt=""> 
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
 									<p class="textPortafolio">Manipulation de canvas avec Js </p>
@@ -143,7 +171,7 @@
 							</div>
 						</div> 
 						<div class="itemPortafolio">
-							<img src="images/portafolio/religeuse_moteur.png" alt=""> 
+							<img class="img-portafolio" src="images/portafolio/religeuse_moteur.png" alt=""> 
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
 									<p class="textPortafolio">Prototype d'application réalisé avec adobeXd</p>
@@ -153,7 +181,7 @@
 						</div>
 						<div class="itemPortafolio">
 							
-							<img src="images/portafolio/zikhouse.png" alt=""> 
+							<img class="img-portafolio" src="images/portafolio/zikhouse.png" alt=""> 
 						
 							<div class="overlay">
 								<div class="descriptionPortafolio flexCol">
@@ -181,44 +209,47 @@
 				<img src="images/logos/c_logo.png" alt="logo">
 			</div> -->
 			<div id="competences">
-				<h3 class="fontWhite">COMPETENCES</h3>
+				<h2 class="fontWhite">COMPETENCES</h2>
 				<div class="competences-container">
-					<div class="innerCompetence">					
-							<h2>FRONT-END</h2>
-							<p>Structuration et intégration de médias(vidéo,image et son)</p>
-							<p>Réalisation de maquette avec figma et adobe</p>
-							<p>Animations</p>
-							<p>Edition et création d'images (gimp et illustrator)</p>
-							<p>Utilisation de React</p>
-							<div class="logoWeb">
-								<img src="images/logos/html.png" alt="logos" >
-								<img src="images/logos/css.svg" alt="logo css" height="35">
-								<img src="images/logos/java_script.svg" alt="javascript" >
-								<img src="images/logos/bootstrap.png" alt="bootstrap" >
-								<img src="images/logos/adobe_xd.png" alt="logo" >
-								<img src="images/logos/figma_logo.png" alt="figma">
-							</div>
+					<div class="innerCompetence">	
+						<div class="logoWeb">
+							<img src="images/logos/html.png" alt="logos" >
+							<img src="images/logos/css.svg" alt="logo css" height="35">
+							<img src="images/logos/java_script.svg" alt="javascript" >
+							<img src="images/logos/bootstrap.png" alt="bootstrap" >
+							<img src="images/logos/adobe_xd.png" alt="logo" >
+							<img src="images/logos/figma_logo.png" alt="figma">
+						</div>				
+							<h3>FRONT-END</h3>
+							<p>Javascript/ React / Twig</p>
+							<p>Responsive design</p>
+							<p>Réalisation de prototype et wireframe avec Figma</p>
+							<p>Optimisation d'image</p>
+							<p>Connecter avec API</p>
+			
+							
 					</div>
-					<div class="innerCompetence">				
-						<h2>BACK-END</h2>
+					<div class="innerCompetence">
+						<p class="logoWeb"><img src="images/logos/php.png"  alt="logo" ><img src="images/logos/MySQL.png"  alt="logo" ><img src="images/logos/mamp-pro.png" alt="logo"><img src="images/logos/symfony.png" alt="logo"> </p>				
+						<h3>BACK-END</h3>
+						<p>Symfony, PHP</p>
 						<p>Création et gestion de base de données</p>
 						<p>Utilisation de fixtures</p>
 						<p>Sécurisation du site</p>
 						<p>Création back-office</p>
-						<p>Création de formulaires de recherche et de récupération de données</p>
+						<p>CRUD</p>
 						<p></p>
-						<p class="logoWeb"><img src="images/logos/php.png"  alt="logo" ><img src="images/logos/MySQL.png"  alt="logo" ><img src="images/logos/mamp-pro.png" alt="logo"><img src="images/logos/symfony.png" alt="logo"> </p>
+						
 					</div>
 					<div class="innerCompetence">				
-						
-						<h2>AUDIO, VIDEO ET AUTRES</h2>
-						<p>Réalisation de partitions (Finale, musescore)</p>
-						<p>Enregistrement et édition d'audio (Reason, Adobe-audition, Sonar, Studio-one)</p>
-						<p>Edition de video (Davinci resolve,iMovie)</p>
-						<p>Modelisation d'une architecture interieur(Logiciel Home ByMe)</p>
-						<p>Interprétation de violon et violoncelle</p>
-						<p>Traitement d'images (gimp)</p>
 						<p class="logoWeb"><img src="images/logos/Reaper_Logo.png"  alt="logo"><img src="images/logos/garageband.png" alt="logo"> <img src="images/logos/reason_logo.png" alt="logo"> <img src="images/logos/finale.png" alt="logo"><img src="images/logos/daVinciResolve.webp" alt="logo"><img src="images/logos/iMovie.png" alt="logo"><img src="images/logos/homebyme.png" alt="logo"></p>
+
+						<h3>AUDIO, VIDEO ET AUTRES</h3>
+						<p>Transcription et enregistrement musical</p>
+						<p>Edition de video</p>
+						<p>Edition d'images</p>
+
+						
 					</div>
 				</div>
 					<a href="docs/cv_MariaVasquez_devWeb.pdf" class="lienTo" id="cv">MON CV</a>
@@ -231,7 +262,7 @@
 				
 			</div>
 				<div id="contact" class="flexCol dark-container">
-					<h3>CONTACT</h3>
+					<h2>CONTACT</h2>
 					<p> Helena Vasquez<br>Palaiseau, France</p>
 					<div class="logos-contact">
 						
