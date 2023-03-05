@@ -161,7 +161,7 @@ ul
     flex-wrap: wrap;
 	align-items: center;
 	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
-	gap: 9rem;
+
 }
 .name{	
 	text-align: end;
@@ -218,9 +218,8 @@ ul
 
 
 #face2{	
-	opacity: 0.8;
-
-
+	opacity: 0.6;
+	width: 80%;
 }
 .lineLeft {
 	animation: 6s anim-lineLeft ease-in ;
