@@ -997,6 +997,9 @@ footer>div{
 	#intro{
 		margin-left: 10px;
 	}
+	#innerPortafolio{
+		width: 95%;
+	}
 }
 @media screen and (max-width:  700px){
 	.nav-menu {
