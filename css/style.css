@@ -160,9 +160,9 @@ ul
 	display: flex;
 	justify-content: center;
     flex-wrap: wrap;
+	text-align: end;
 	align-items: center;
 	background: linear-gradient( var(--primary-color) 60%, rgb(0, 7, 12));
-
 }
 .name{	
 	text-align: end;
@@ -181,7 +181,6 @@ ul
 }
 #titleWeb{	
 	font-size: 4.2rem;
-	text-align: end;
 	text-transform: uppercase;
 	letter-spacing: -2px;
 	font-family: sans-serif;
@@ -210,10 +209,10 @@ ul
 
 #palaiseau{
 	font-size:1.4rem;
-	text-align: start;
 	transform: scale(0.9);
 	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1);	
 	font-weight: lighter;
+	
 	color: rgb(142, 174, 175);
 }
 
@@ -829,9 +828,9 @@ footer
 	color: white;
 }
 footer>p{
-	margin-top: 0.4rem;
+	margin: 1rem;
 	font-family: sans-serif;
-	font-size: 0.3rem;
+	font-size: 0.7rem;
 }
 footer>div{
 	display: flex;
@@ -843,7 +842,15 @@ footer>div{
 	align-items: center;
 	margin: 3rem 0;
 }
-
+@media screen and (max-width:  1550px){
+	#presentation, .name{
+		text-align: center;
+	}
+	#palaiseau{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
 
 @media screen and (max-width:  1200px)
 {	
@@ -994,9 +1001,7 @@ footer>div{
 	#palaiseau{
 		font-size: 1rem;
 	}
-	#intro{
-		margin-left: 10px;
-	}
+	
 	#innerPortafolio{
 		width: 95%;
 	}
