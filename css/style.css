@@ -451,6 +451,34 @@ ul
 .odinProjects{
 	padding-top: 100px;
 	background-color: rgb(2, 2, 3);
+	min-height: 80vh;
+	text-align: center;
+	color: rgb(159, 152, 161);
+}
+.odinProjects h1{
+	
+	
+	text-transform: uppercase;
+}
+.odin-container{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 3rem 0;
+}
+.odin-container a{
+	text-decoration: none;
+}
+.odin-container a:hover{
+	color: white;
+}
+.odin-container .itemPortafolio{
+	object-fit: contain;
+	height: 200px;
+}
+.odin-container h2{
+	font-size: 1rem;
+	margin: 2rem;
 }
 
 /*-----------------------Competences--------------------*/
