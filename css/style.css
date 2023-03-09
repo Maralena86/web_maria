@@ -521,12 +521,12 @@ ul
 }
 .music-galery{
 	display: flex;
-	width: 90%;
+	width: 80%;
 	height: 430px;
 	background-image: linear-gradient(rgb(33, 8, 66), var(--primary-color));
 	padding: 2rem;
 	border-radius: 10px;
-	margin-top: 3rem;
+	margin: 5rem 0;
 }
 .music-galery img{
 	width: 0;
@@ -534,6 +534,7 @@ ul
 	object-fit: cover;
 	transition-duration: 4s;
 }
+
 .music-galery img:hover{
 	cursor: crosshair;
 	width: 200px;
@@ -563,11 +564,11 @@ ul
 video, .imgProj
 {
 	height: 50%;
-	width: 60%;
+	width: 80%;
 	border-radius: 50px;
 	box-shadow: 4px 5px 15px rgb(0, 0, 0);
-	background-image: linear-gradient(black, rgb(16, 16, 51));
-	padding: 3rem;	
+	background-image: linear-gradient(black, rgb(3 3 31));
+    padding: 1rem;	
 }
 .image_proj
 {
@@ -963,6 +964,9 @@ footer > div{
 	}
 	iframe{
 		margin: 0px auto;
+	}
+	.hide-image{
+		display: none;
 	}
 
 }
