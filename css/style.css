@@ -75,7 +75,6 @@
     font-style: normal;
 }
 
-
 /*---------------------------------------Header---------------------------------------*/
 
 header
@@ -86,10 +85,10 @@ header
 	position: fixed;
 	z-index: 1;
 	background-color:rgb(8, 16, 22);
-
 }
 
 /*navigation/Menu*/
+
 nav{
 	min-height: 70px;
 	width: 100%;
@@ -104,7 +103,6 @@ nav{
     align-items: center;
     gap: 60px;
 	padding-right: 2rem;
-
 }
 #logo{
 	height: 4em;
@@ -116,27 +114,22 @@ ul
 	list-style-type: none;
 	font-weight: lighter;
 }
-
 .nav-item a:hover
 {
 	border-bottom: 1px solid var(--fourth-color);
 }
-
 .nav-link{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: white;
 	font-size: 1rem;
-	padding: 0.5rem;
-	
+	padding: 0.5rem;	
 }
-
 .hamburguer{
     display: none;
     cursor: pointer;
 
 }
-
 .bar{
     display: block;
     width: 36px;
@@ -150,15 +143,12 @@ ul
 /***************************************FIN HEADER************************************************/
 
 /*corps de la page*/
-
-
-
 /*------ Presentation ------*/
 
 #presentation{
 	color: white;	
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
     flex-wrap: wrap;
 	text-align: end;
 	align-items: center;
@@ -197,8 +187,7 @@ ul
     var(--fourth-color) 25%,  
     #214d4e 60%,
 	#29306d 70%,
-	#400c49 80%
-	
+	#400c49 80%	
   );     
 }
 @keyframes textclip {
@@ -206,24 +195,23 @@ ul
 	  background-position: 200% center;
 	}
 }
-
 #palaiseau{
 	font-size:1.4rem;
 	transform: scale(0.9);
 	animation: scaled 4s forwards cubic-bezier(0.7, 1, 0.89, 1);	
 	font-weight: lighter;
-	
+	line-height: 1.3;
 	color: rgb(142, 174, 175);
 }
-
-
+.intro-image-container{
+	width: 30%;
+}
 #face2{	
 	opacity: 0.6;
-	width: 80%;
+	width: 100%;
 }
 .lineLeft {
 	animation: 6s anim-lineLeft ease-in ;
-
 }
 	@keyframes anim-lineLeft {
 	0% {
@@ -231,13 +219,13 @@ ul
 		
 	}		
 	100% {
-		opacity: 0.5;
-		
+		opacity: 0.5;		
 	}
 }
 	
 /*----------------------About me------------------------*/
 /* lineRight class and keyframes */
+
 .faceContainer{
 	margin: 0;
 	display: flex;
@@ -269,7 +257,6 @@ ul
 	align-items: center;		
 	color:var(--primary-color);
 }
-
 .descriptionAbout{
 	width: 70%;
 	margin-right: 40px;
@@ -379,7 +366,6 @@ ul
 	height: 40px;
 	border-radius: 10px;
 }
-
 .itemPortafolio>img{
 	display: block;
 	width: 100%;
@@ -388,7 +374,6 @@ ul
 	height: 100%;
 
 }
-
 .overlay{
 	position: absolute;
 	top: 0;
@@ -401,8 +386,6 @@ ul
 	height: 100%;
 	transition: .5s ease-out;
 	border: 1px solid rgb(1, 13, 34);
-	
-	
 }
 .portafolio-logo{
 	height: 1rem;
@@ -411,12 +394,10 @@ ul
 .itemPortafolio:hover .overlay{
 	opacity: 1;
 }
-
 .descriptionPortafolio{
 	justify-content: center;	
 	height: 100%;	
 }
-
 .descriptionPortafolio>a{
 	border:2px solid var(--second-color);
 	padding: 10px 20px;
@@ -425,26 +406,20 @@ ul
 	color: white;
 	font-weight: bold;
 }
-
 .descriptionPortafolio>p{
 	color:  rgb(205, 221, 228);
 	font-size: 1rem;
 	padding: 10px;
 }
-
 .descriptionPortafolio>a:hover{
 	background-color: var(--second-color);
 	color: white;
-
 }
-
 #logosDev{
 	background-image: linear-gradient(rgba(219, 204, 184, 0.7), rgb(163, 149, 118, 0.7) );
 	height: 170px;
 	margin: 10px 0px;
 }
-
-
 #logosDev > img{
 	height: 45px;
 	opacity: 0.7;
@@ -456,6 +431,7 @@ ul
 }
 
 /*----------------Odin Projects------------------*/
+
 .odinProjects{
 	padding-top: 100px;
 	background-color: rgb(2, 2, 3);
@@ -463,9 +439,7 @@ ul
 	text-align: center;
 	color: rgb(159, 152, 161);
 }
-.odinProjects h1{
-	
-	
+.odinProjects h1{	
 	text-transform: uppercase;
 }
 .odin-container{
@@ -504,7 +478,6 @@ ul
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 .innerCompetence{
 	background:linear-gradient(rgb(21, 3, 49), black);
 	width: 20%;	
@@ -512,7 +485,6 @@ ul
 	text-align: center;
 	padding: 2rem;
 	color: white;
-
 }
 .innerCompetence h3{
 	margin: 2rem ;
@@ -527,8 +499,7 @@ ul
 	display: flex;
 	justify-content: center;
 	gap: 2rem;
-	margin-top: 0.5rem;
-	
+	margin-top: 0.5rem;	
 }
 .logoWeb>img{
 	height: 1.2rem;	
@@ -547,6 +518,28 @@ ul
 
 #artistique p{
 	width: 80%;
+}
+.music-galery{
+	display: flex;
+	width: 90%;
+	height: 430px;
+	background-image: linear-gradient(rgb(33, 8, 66), var(--primary-color));
+	padding: 2rem;
+	border-radius: 10px;
+	margin-top: 3rem;
+}
+.music-galery img{
+	width: 0;
+	flex-grow: 1;
+	object-fit: cover;
+	transition-duration: 4s;
+}
+.music-galery img:hover{
+	cursor: crosshair;
+	width: 200px;
+	opacity: 1;
+	filter: contrast(120%);
+	
 }
 #projets{
 	margin-top: 40px;
@@ -591,7 +584,6 @@ video, .imgProj
 	font-size: 50px;
 	font-weight: lighter;
 }
-
 .proj-prev
 {
 	display: flex;
@@ -650,7 +642,9 @@ video, .imgProj
 	opacity: 0.6;
 	
 }
+
 /*-------------------------Ateliers-----------------------*/
+
 #atelierContainer{
 	width: 100%;
 }
@@ -675,6 +669,7 @@ video, .imgProj
 .ateliers{
 	justify-content: center;
 }	
+
 /******************************************/
 
 .galerie-container{
@@ -695,7 +690,6 @@ video, .imgProj
 	height: 250px;
 	transform-style: preserve-3d;
 }
-
 .slider span{
 	position: absolute;
 	top: 0;
@@ -717,7 +711,6 @@ video, .imgProj
 	transition: 2s;
 	border: 4px solid rgb(66, 33, 98);
 }
-
 .creation
 {	
 	display: flex;
@@ -784,8 +777,6 @@ video, .imgProj
 	text-align: center;
 	text-decoration: none;
 }
-
-
 form
 {
 	background-color: rgba(244, 242, 223, 0.6);
@@ -807,7 +798,7 @@ form
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
-	background: linear-gradient(    #4D224B, var(--primary-color));
+	background: linear-gradient(#4D224B, var(--primary-color));
 	color: white;
 	font-weight: bold;
 	border-radius: 10px;
@@ -823,16 +814,15 @@ form
 }
 footer
 {	
-	background-color: var(--primary-color);
+	background-color: rgb(238, 233, 225);
 	padding: 10px;	
-	color: white;
 }
-footer>p{
+footer > p{
 	margin: 1rem;
 	font-family: sans-serif;
 	font-size: 0.7rem;
 }
-footer>div{
+footer > div{
 	display: flex;
 	justify-content: center;
 }
@@ -841,24 +831,36 @@ footer>div{
 	gap: 1rem;
 	align-items: center;
 	margin: 3rem 0;
+
 }
 @media screen and (max-width:  1550px){
-	#presentation, .name{
-		text-align: center;
+
+	#presentation{
+		padding: 3rem 0;
+	}
+	
+	.name, #palaiseau{
+		font-size: 1.3rem;
 	}
 	#palaiseau{
-		max-width: 80%;
+	
 		margin: 0 auto;
 	}
 }
 
 @media screen and (max-width:  1200px)
 {	
+
 	h1
 	{
 		font-size: 2em;
 	}	
-	
+	#presentation, .name, #titleWeb{
+		text-align: center;
+	}
+	#palaiseau{
+		max-width: 80%;
+	}
 	.innerAtelier >h4{
 		font-size: 34px;
 	}	
@@ -887,7 +889,6 @@ footer>div{
         transition: 0.3s;
 		padding: 0;
     }
-
     .nav-item{
 		width: 100%;
 		padding: 20px 0px;
@@ -898,30 +899,26 @@ footer>div{
 	}
 	.nav-item:hover{
 		background-color: var(--primary-color);
-
 	}
+
     .nav-menu.active{
     left: 0;
-    }
-	
+    }	
 	section{
 		min-height: 80vh;
 	}
+
 	/*--------index-----------*/
+
 	#titleWeb{
 		font-size: 3rem;
 	}
-
 	.name{
 		font-size: 40px;
-	}
-	
+	}	
 	#palaiseau{
 		font-size: 35px;
 	}
-
-	
-
 	#face{
 		display: none;
 	}
@@ -929,11 +926,11 @@ footer>div{
 		width: 80%;
 		margin: 50px auto;
 	}
-	
 
 	/*Portafolio*/
 	
 	/*---------------*/
+
 	.proj-prev
 	{
 		padding: 30px 0px;
@@ -942,8 +939,7 @@ footer>div{
 		height: auto;
 		width: 100%;
 		gap: 30px;		
-	}
-	
+	}	
 	.audios, .innerAtelier{
 		width: 85%;
 		padding: 25px;
@@ -953,26 +949,24 @@ footer>div{
 		height: auto;
 	}
 	.creation{
-		width: 80%;
-		
+		width: 80%;		
 	}
 	iframe{
-		width: 100%;
-		
+		width: 100%;		
 	}
 	.creation>img{
 		height: auto;
 		width: 100%;
-
 	}
-	
 	.image_proj > .lineLeft{
 		animation: none;
 	}
 	iframe{
 		margin: 0px auto;
 	}
+
 }
+
 @media screen and (max-width:  900px){
 
 	#titleWeb{
@@ -991,8 +985,10 @@ footer>div{
 	}
 	.logoWeb>img {
 		height: 20px;
-		}
+	}
+
 }
+
 @media screen and (max-width:  950px){
 	
 	.name{
@@ -1000,13 +996,15 @@ footer>div{
 	}
 	#palaiseau{
 		font-size: 1rem;
-	}
-	
+	}	
 	#innerPortafolio{
 		width: 95%;
 	}
+
 }
+
 @media screen and (max-width:  700px){
+
 	.nav-menu {
 		top: 45px;
 	}
@@ -1017,14 +1015,11 @@ footer>div{
 		font-size: 2em;
 	}
 	#logo {
-		height: 3.4em;
-	
+		height: 3.4em;	
 	}
 	#logosDev{
 		display: none;
-	}
-	
-	
+	}		
 	.logo{
 		width: 25px;
 	}
@@ -1032,19 +1027,18 @@ footer>div{
 		margin: 10px 0px;
 		gap: 1rem;
 	}
-
 	.bar {
 		width: 32px;
-	
 	}
-
 	.logo {
 		padding: 0px 10px;
 	}
 	.descriptionAbout {
 		margin: 10px auto;
 	}
+
 }
+
 @media screen and (max-width:  500px){
 .creation>img {
     height: 400px;
@@ -1061,4 +1055,5 @@ footer>div{
 #palaiseau{
 	font-size: 0.6rem;
 }
+
 }
